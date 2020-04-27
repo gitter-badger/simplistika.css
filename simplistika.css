@@ -171,7 +171,7 @@ pre,
 .pre {
   padding: 0.5rem;
   line-height: 1.25;
-  overflow-x: scroll;
+  ove.flashow-x: scroll;
   border-radius: 4px;
 }
 
@@ -182,108 +182,107 @@ code,
 
 blockquote,
 .blockquote,
-.quo {
+.quote {
   border-left: 3px solid;
   padding-left: 1rem;
   background: none !important;
 }
 
-.quo p {
+.quote p {
   font-size: 1.2rem;
 }
 
-.quo-fo {
+.quote-fo {
   text-align: right;
   color: var(--dark4);
 }
 
 /*borders*/
 
-.br-orange {
-  border-color: var(--orange);
+.border-orange {
+  border-color: var(--orange) !important;
 }
 
-.br-blue {
-  border-color: var(--blue);
+.border-blue {
+  border-color: var(--blue) !important;
 }
 
-.br-light-blue {
-  border-color: var(--light-blue);
+.border-light-blue {
+  border-color: var(--light-blue) !important;
 }
 
-.br-red {
-  border-color: var(--red);
+.border-red {
+  border-color: var(--red) !important;
 }
 
-.br-pink {
-  border-color: var(--pink);
+.border-pink {
+  border-color: var(--pink) !important;
 }
 
-.br-purple {
-  border-color: var(--purple);
+.border-purple {
+  border-color: var(--purple) !important;
 }
 
-.br-yellow {
-  border-color: var(--yellow);
+.border-yellow {
+  border-color: var(--yellow) !important;
 }
 
-.br-green {
-  border-color: var(--green);
+.border-green {
+  border-color: var(--green) !important;
 }
 
-.br-orange:hover:enabled,
-.br-orange:active:enabled,
-.br-orange:focus:enabled {
+.border-orange:hover:enabled,
+.border-orange:active:enabled,
+.border-orange:focus:enabled {
   background-color: var(--orange);
 }
 
-.br-blue:hover:enabled,
-.br-blue:active:enabled,
-.br-blue:focus:enabled {
+.border-blue:hover:enabled,
+.border-blue:active:enabled,
+.border-blue:focus:enabled {
   background-color: var(--blue);
 }
 
-.br-light-blue:hover:enabled,
-.br-light-blue:active:enabled,
-.br-light-blue:focus:enabled {
+.border-light-blue:hover:enabled,
+.border-light-blue:active:enabled,
+.border-light-blue:focus:enabled {
   background-color: var(--light-blue);
 }
 
-.br-red:hover:enabled,
-.br-red:active:enabled,
-.br-red:focus:enabled {
+.border-red:hover:enabled,
+.border-red:active:enabled,
+.border-red:focus:enabled {
   background-color: var(--red);
 }
 
-.br-pink:hover:enabled,
-.br-pink:active:enabled,
-.br-pink:focus:enabled {
+.border-pink:hover:enabled,
+.border-pink:active:enabled,
+.border-pink:focus:enabled {
   background-color: var(--pink);
 }
 
-.br-purple:hover:enabled,
-.br-purple:active:enabled,
-.br-purple:focus:enabled {
+.border-purple:hover:enabled,
+.border-purple:active:enabled,
+.border-purple:focus:enabled {
   background-color: var(--purple);
 }
 
-.br-yellow:hover:enabled,
-.br-yellow:active:enabled,
-.br-yellow:focus:enabled {
+.border-yellow:hover:enabled,
+.border-yellow:active:enabled,
+.border-yellow:focus:enabled {
   background-color: var(--yellow);
 }
 
-.br-green:hover:enabled,
-.br-green:active:enabled,
-.br-green:focus:enabled {
+.border-green:hover:enabled,
+.border-green:active:enabled,
+.border-green:focus:enabled {
   background-color: var(--green);
 }
 
 /*buttons*/
 
 button,
-.button,
-a.bt {
+.button {
   color: white;
   border: 2px solid;
   outline: 0;
@@ -302,12 +301,11 @@ a.bt {
 }
 
 button:hover:enabled,
-.button:hover:enabled,
-.bt:hover:enabled {
+.button:hover:enabled {
   transition: 0.2s;
 }
 
-.mini-bt {
+.mini-button {
   padding: 0.25rem 0.55rem;
   width: auto;
 }
@@ -315,7 +313,7 @@ button:hover:enabled,
 
 /*flashes*/
 
-.fl {
+.flash {
   width: 100%;
   height: auto;
   border: 2px solid;
@@ -326,47 +324,47 @@ button:hover:enabled,
   padding-left: 15px;
 }
 
-.fl-orange {
+.flash-orange {
   border-color: var(--orange);
   color: var(--orange) !important;
 }
 
-.fl-blue {
+.flash-blue {
   border-color: var(--blue);
   color: var(--blue) !important;
 }
 
-.fl-light-blue {
+.flash-light-blue {
   border-color: var(--light-blue);
   color: var(--light-blue) !important;
 }
 
-.fl-red {
+.flash-red {
   border-color: var(--red);
   color: var(--red) !important;
 }
 
-.fl-pink {
+.flash-pink {
   border-color: var(--pink);
   color: var(--pink) !important;
 }
 
-.fl-purple {
+.flash-purple {
   border-color: var(--purple);
   color: var(--purple) !important;
 }
 
-.fl-yellow {
+.flash-yellow {
   border-color: var(--yellow);
   color: var(--yellow) !important;
 }
 
-.fl-green {
+.flash-green {
   border-color: var(--green);
   color: var(--green) !important;
 }
 
-.fl:hover {
+.flash:hover {
   opacity: 1;
   transition: 0.2s;
 }
@@ -466,8 +464,7 @@ input[type="text"]:disabled,
 input[type="text"][disabled],
 select[disabled],
 .slc:disabled {
-  border-color: var(--dark2);
-  color: var(--dark2);
+  opacity: 0.3;
 }
 
 /*checkbox*/
@@ -476,6 +473,7 @@ select[disabled],
   display: block;
   position: relative;
   padding-left: 35px;
+  background-color: var(--dark4);
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -595,7 +593,7 @@ select[disabled],
 /*navbar*/
 
 nav,
-.nv {
+.navbar {
   width: 100%;
   height: auto;
   display: block;
@@ -603,22 +601,22 @@ nav,
   padding: 0 40px;
 }
 
-.nv ul {
+.navbar ul {
   position: relative;
   text-align: right;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  display: flex;
+  ove.flashow: hidden;
+  display:.flashex;
 }
 
-.nv li {
+.navbar li {
   display: inline-block;
   margin: 0 10px;
 }
 
-.nv li a {
+.navbar li a {
   display: block;
   padding: 16px 12px;
   color: white;
@@ -631,12 +629,12 @@ nav,
   height: 100%;
 }
 
-.nv li a:hover {
+.navbar li a:hover {
   background: white;
   transition: 0.2s;
 }
 
-.nv-lg {
+.navbar .logo {
   margin-left: 10px;
   margin-top: 5px;
   text-decoration: none;
@@ -645,7 +643,7 @@ nav,
   float: left;
 }
 
-.nv .inp-text {
+.navbar .inp-text {
   right: 0;
   border-color: white;
   border-radius: 12px;
@@ -658,8 +656,8 @@ nav,
   -webkit-transition: width .2s ease-in-out;
 }
 
-.nv .inp-text:hover:enabled,
-.nv .inp-text:focus:enabled {
+.navbar .inp-text:hover:enabled,
+.navbar .inp-text:focus:enabled {
   width: auto;
   max-width: 400px;
   min-width: 20%;
@@ -670,94 +668,94 @@ nav,
 @media (max-width: 1075px) {
 
   nav,
-  .nv {
+  .navbar {
     padding: 0 20px;
   }
 }
 
-.nv-gradient {
+.navbar-gradient {
   background: var(--gradient);
 }
 
-.nv-orange {
+.navbar-orange {
   background: var(--orange);
 }
 
-.nv-blue {
+.navbar-blue {
   background: var(--blue);
 }
 
-.nv-light-blue {
+.navbar-light-blue {
   background: var(--light-blue);
 }
 
-.nv-red {
+.navbar-red {
   background: var(--red);
 }
 
-.nv-pink {
+.navbar-pink {
   background: var(--pink);
 }
 
-.nv-purple {
+.navbar-purple {
   background: var(--purple);
 }
 
-.nv-yellow {
+.navbar-yellow {
   background: var(--yellow);
 }
 
-.nv-green {
+.navbar-green {
   background: var(--green);
 }
 
-.nv-orange ul li a:hover,
-.nv-gradient ul li a:hover,
-.nv-orange .inp-text:hover:enabled,
-.nv-orange .inp-text:focus:enabled,
-.nv-gradient .inp-text:hover:enabled,
-.nv-gradient .inp-text:focus:enabled {
+.navbar-orange ul li a:hover,
+.navbar-gradient ul li a:hover,
+.navbar-orange .inp-text:hover:enabled,
+.navbar-orange .inp-text:focus:enabled,
+.navbar-gradient .inp-text:hover:enabled,
+.navbar-gradient .inp-text:focus:enabled {
   color: var(--orange) !important;
 }
 
-.nv-blue ul li a:hover,
-.nv-blue .inp-text:hover:enabled,
-.nv-blue .inp-text:focus:enabled {
+.navbar-blue ul li a:hover,
+.navbar-blue .inp-text:hover:enabled,
+.navbar-blue .inp-text:focus:enabled {
   color: var(--blue) !important;
 }
 
-.nv-light-blue ul li a:hover,
-.nv-light-blue .inp-text:hover:enabled,
-.nv-light-blue .inp-text:focus:enabled {
+.navbar-light-blue ul li a:hover,
+.navbar-light-blue .inp-text:hover:enabled,
+.navbar-light-blue .inp-text:focus:enabled {
   color: var(--light-blue) !important;
 }
 
-.nv-red ul li a:hover,
-.nv-red .inp-text:hover:enabled,
-.nv-red .inp-text:focus:enabled {
+.navbar-red ul li a:hover,
+.navbar-red .inp-text:hover:enabled,
+.navbar-red .inp-text:focus:enabled {
   color: var(--red) !important;
 }
 
-.nv-pink ul li a:hover,
-.nv-pink .inp-text:hover:enabled,
-.nv-pink .inp-text:focus:enabled {
+.navbar-pink ul li a:hover,
+.navbar-pink .inp-text:hover:enabled,
+.navbar-pink .inp-text:focus:enabled {
   color: var(--pink) !important;
 }
 
-.nv-purple ul li a:hover,
-.nv-purple .inp-text:hover:enabled,
-.nv-purple .inp-text:focus:enabled {
+.navbar-purple ul li a:hover,
+.navbar-purple .inp-text:hover:enabled,
+.navbar-purple .inp-text:focus:enabled {
   color: var(--purple) !important;
 }
 
-.nv-yellow ul li a:hover,
-.nv-yellow .inp-text:hover:enabled,
-.nv-yellow .inp-text:focus:enabled {
+.navbar-yellow ul li a:hover,
+.navbar-yellow .inp-text:hover:enabled,
+.navbar-yellow .inp-text:focus:enabled {
   color: var(--yellow) !important;
 }
 
-.nv-green ul li a:hover,
-.nv-green .inp-text:hover:enabled,
-.nv-green .inp-text:focus:enabled {
+.navbar-green ul li a:hover,
+.navbar-green .inp-text:hover:enabled,
+.navbar-green .inp-text:focus:enabled {
   color: var(--green) !important;
 }
